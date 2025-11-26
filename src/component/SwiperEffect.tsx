@@ -18,7 +18,7 @@ const SwiperEffect = () => {
 
       {/* 🔥 Overlay Text Layer */}
       <div className="absolute z-20 top-1/3  text-white w-full flex flex-col justify-center  items-center">
-        <h1 className="text-2xl md:text-4xl font-bold leading-snug drop-shadow-lg">
+        <h1 className="text-xl md:text-4xl font-bold leading-snug drop-shadow-lg">
           আরিয়ান সিটি — আপনার পরিবারের স্বপ্নের ঠিকানা
         </h1>
 
@@ -59,7 +59,7 @@ const SwiperEffect = () => {
           },
         }}
         modules={[EffectCreative, Autoplay]}
-        className="w-full h-screen"
+        className=" max-w-screen h-[60%] md:w-full md:h-screen"
       >
        
         <SwiperSlide>
