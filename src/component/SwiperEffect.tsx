@@ -28,15 +28,15 @@ const SwiperEffect = () => {
 
         <div className="mt-6 flex gap-4">
           <Link href={'/Gallery'}>
-          <button className="bg-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">
-            প্লট দেখুন
-          </button>
+            <button className="bg-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+              প্লট দেখুন
+            </button>
           </Link>
 
           <Link href={'/Contact'}>
-          <button className="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
-            যোগাযোগ করুন
-          </button>
+            <button className="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+              যোগাযোগ করুন
+            </button>
           </Link>
         </div>
       </div>
@@ -49,32 +49,44 @@ const SwiperEffect = () => {
         autoplay={{ delay: 2500 }}
         creativeEffect={{
           prev: {
-            shadow: true,
-            translate: [0, 0, -400],
+            shadow: false,
+            translate: [0, 0, -300],
           },
           next: {
-            translate: ["100%", 0, -200],
-            rotate: [0, 0, -20],
-            scale: 0.6,
+            translate: ["100%", 0, -150],
+            rotate: [0, 0, -15],
+            scale: 0.8,
           },
         }}
         modules={[EffectCreative, Autoplay]}
-        className=" max-w-screen h-[60%] md:w-full md:h-screen"
+        className="w-full h-[80vh] sm:h-[90vh] md:h-screen"
       >
-       
         <SwiperSlide>
-          <Image src={img3} alt="" className="w-full h-screen object-cover" />
+          <Image
+            src={img3}
+            alt=""
+            className="w-full h-full object-cover object-center"
+            priority
+          />
         </SwiperSlide>
 
         <SwiperSlide>
-          <Image src={img2} alt="" className="w-full h-screen object-cover" />
+          <Image
+            src={img2}
+            alt=""
+            className="w-full h-full object-cover object-center"
+          />
         </SwiperSlide>
 
-
-         <SwiperSlide>
-          <Image src={img1} alt="" className="w-full h-screen object-cover" />
+        <SwiperSlide>
+          <Image
+            src={img1}
+            alt=""
+            className="w-full h-full object-cover object-center"
+          />
         </SwiperSlide>
       </Swiper>
+
     </div>
   );
 };

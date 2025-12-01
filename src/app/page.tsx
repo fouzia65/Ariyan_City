@@ -45,14 +45,15 @@ useEffect(() => {
         <TrustBadges></TrustBadges>
       </section>
       <section className="box">
+        <WhyChooseUs></WhyChooseUs>
+      </section>
+      <section className="box">
         <LocationSection></LocationSection>
       </section>
       <section className="box">
         <Gallery></Gallery>
       </section>
-      <section className="box">
-        <WhyChooseUs></WhyChooseUs>
-      </section>
+      
     </div>
     
   );
