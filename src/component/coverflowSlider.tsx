@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import img1 from '../../public/DSC00714.jpg'
