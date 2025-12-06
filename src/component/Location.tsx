@@ -1,4 +1,5 @@
 import React from "react";
+import CoverflowSlider from "./coverflowSlider";
 
 const LocationSection = () => {
   return (
@@ -25,6 +26,7 @@ const LocationSection = () => {
           Book a Visit
         </a>
       </div>
+      <CoverflowSlider></CoverflowSlider>
 
       {/* Map Cards */}
       <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
@@ -72,7 +74,10 @@ const LocationSection = () => {
             Sales Office Location
           </div>
         </div>
+        
       </div>
+      
+
     </section>
   );
 };

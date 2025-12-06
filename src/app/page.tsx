@@ -8,6 +8,7 @@ import LocationSection from "@/component/Location";
 import { useEffect } from "react";
 
 
+
 export default function Home() {
 useEffect(() => {
   const sections: NodeListOf<Element> = document.querySelectorAll('.box');
@@ -50,6 +51,7 @@ useEffect(() => {
       <section className="box">
         <LocationSection></LocationSection>
       </section>
+     
       <section className="box">
         <Gallery></Gallery>
       </section>
